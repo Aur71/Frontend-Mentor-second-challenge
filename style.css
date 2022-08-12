@@ -91,7 +91,7 @@ p {
   justify-content: space-between;
 }
 
-.btn-div button {
+.ratingBtn {
   border: none;
   border-radius: 50%;
   padding: 15px;
@@ -104,12 +104,17 @@ p {
   font-family: "Overpass", sans-serif;
 }
 
-.btn-div button:hover {
+.ratingBtn:hover {
   background-color: var(--clr3);
   color: var(--clr2);
 }
 
-.btn-div button:active {
+.ratingBtn:active {
+  background-color: var(--clr1);
+  color: var(--clr2);
+}
+
+.active {
   background-color: var(--clr1);
   color: var(--clr2);
 }
@@ -208,4 +213,11 @@ h2 {
     padding: 6px 10px 5px 10px;
     font-size: 15px;
   }
+}
+
+/* JS classes */
+
+.btn-div button .btnActive {
+  background-color: var(--clr1);
+  color: var(--clr2);
 }
